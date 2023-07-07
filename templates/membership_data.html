@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership_Table</title>
+</head>
+<body>
+    <center>
+        <table border="2px">
+            <thead>
+                <tr>
+                    <th>Packages</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for x in data %}
+                    <tr>
+                        <td>{{x.package}}</td>
+                        <td>{{x.amount}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </center>
+    
+</body>
+</html>
